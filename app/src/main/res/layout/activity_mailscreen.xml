@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mailscreen"
+    android:background="@drawable/emailpic">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMAIL"
+            android:textSize="40dp"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="TO"
+            android:layout_marginTop="85dp"
+            android:textColorHint="@color/cardview_light_background"
+            android:inputType="textEmailAddress"
+            android:id="@+id/toemail"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="SUBJECT"
+            android:layout_marginTop="145dp"
+            android:inputType="textEmailSubject"
+            android:textColorHint="@color/cardview_light_background"
+            android:id="@+id/subject"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="MESSAGE"
+            android:layout_marginTop="205dp"
+            android:textColorHint="@color/cardview_light_background"
+            android:inputType="textMultiLine"
+            android:id="@+id/message"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="285dp"
+            android:layout_centerHorizontal="true"
+            android:text="SEND"
+            android:textColor="#000"
+            android:id="@+id/send"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

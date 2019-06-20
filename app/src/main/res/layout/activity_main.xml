@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/cardview_dark_background">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wview"
+        android:scrollbars="none">
+
+    </WebView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        app:cardCornerRadius="10dp">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FOOD"
+            android:textSize="25dp"
+            android:textColor="#F44336"
+            android:textStyle="bold"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="2dp"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="1dp"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/swiggy"
+                        android:clickable="true"
+                        android:onClick="swibutton"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SWIGGY"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/zomato"
+                        android:clickable="true"
+                        android:onClick="zombutton"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ZOMATO"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ubereats"
+                        android:clickable="true"
+                        android:onClick="ubebutton"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UBER EATS"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/foodpanda"
+                        android:clickable="true"
+                        android:onClick="foobutton"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FOOD PANDA"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHOPPING"
+            android:textSize="25dp"
+            android:textColor="#F44336"
+            android:textStyle="bold"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="30dp"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="1dp"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/flipkart"
+                        android:clickable="true"
+                        android:onClick="flibutton"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FLIPKART"
+                        android:layout_marginLeft="43dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/amazon"
+                        android:clickable="true"
+                        android:onClick="amabutton"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AMAZON"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/snapdeal"
+                        android:clickable="true"
+                        android:onClick="snabutton"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SNAPDEAL"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/myntra"
+                        android:clickable="true"
+                        android:onClick="mynbutton"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MYNTRA"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MOVIE TICKETS"
+            android:textSize="25dp"
+            android:textColor="#F44336"
+            android:textStyle="bold"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="14dp"/>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="1dp"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/bookmyshow"
+                        android:clickable="true"
+                        android:onClick="bmsbutton"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BOOKMYSHOW"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/justickets"
+                        android:clickable="true"
+                        android:onClick="jusbutton"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JUSTICKETS"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ticketnew"
+                        android:clickable="true"
+                        android:onClick="ticbutton"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TICKETNEW"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUS TICKETS"
+            android:textSize="25dp"
+            android:textColor="#F44336"
+            android:textStyle="bold"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="14dp"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="1dp"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/abhibus"
+                        android:clickable="true"
+                        android:onClick="abhbutton"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ABHIBUS"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/redbus"
+                        android:clickable="true"
+                        android:onClick="redbutton"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REDBUS"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/paytm"
+                        android:clickable="true"
+                        android:onClick="paybutton"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PAYTM"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

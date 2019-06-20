@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardActivity"
+    android:background="@color/colorAccent"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/cardview_light_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/snapdeal"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/logo"
+            />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Username "
+             android:layout_below="@+id/logo"
+             android:textSize="25dp"
+             android:layout_marginTop="50dp"
+             android:textColor="#F50057"
+             android:id="@+id/userview"
+             android:layout_marginLeft="10dp"
+             android:textStyle="bold"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/userview"
+                android:layout_marginTop="45dp"
+                android:layout_below="@+id/logo"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:inputType="textEmailAddress"
+                android:id="@+id/useredit"
+                android:drawableRight="@drawable/ic_action_name"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password "
+                android:id="@+id/passview"
+                android:layout_below="@+id/userview"
+                android:textSize="25dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#F50057"
+                android:textStyle="bold"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/passedit"
+               android:layout_toRightOf="@+id/passview"
+               android:layout_below="@+id/userview"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="5dp"
+               android:layout_marginTop="30dp"
+               android:inputType="textWebPassword"
+               android:drawableRight="@drawable/eye"
+               android:focusableInTouchMode="true"
+               />
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="350dp"
+                android:layout_centerHorizontal="true"
+                android:text="Login"
+                android:textStyle="bold"
+                android:id="@+id/clibutton"
+                android:textColor="#FAFAFA"
+                android:backgroundTint="@color/colorAccent"
+                android:onClick="login"
+                android:background="@drawable/btn"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/forpass"
+                android:text="forgot password?"
+                android:layout_below="@+id/clibutton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:textColor="#F50057"
+                android:clickable="true"
+                android:onClick="forgotbutton"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/register"
+                android:text="Don't have an account yet ?"
+                android:layout_below="@+id/forpass"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:textColor="#F50057"
+                android:clickable="true"
+                android:onClick="regbutton"
+                />
+
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

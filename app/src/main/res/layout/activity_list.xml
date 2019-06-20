@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".List"
+    android:id="@+id/dlayout"
+    android:background="@drawable/listbackground">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHOOSE A CATEGORY"
+            android:textSize="35dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="32dp"
+            android:textColor="#FFD600"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/but1"
+            android:text="CALL"
+            android:drawableLeft="@drawable/callicon"
+            android:onClick="callbut"
+            android:layout_marginTop="22dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/but2"
+            android:text="SMS"
+            android:drawableLeft="@drawable/smsicon"
+            android:onClick="smsbut"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/but3"
+            android:text="MAIL"
+            android:drawableLeft="@drawable/mailicon"
+            android:onClick="mailbut"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/but4"
+            android:text="CAMERA"
+            android:drawableLeft="@drawable/camicon"
+            android:onClick="cambut"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/but5"
+            android:text="UPLOAD"
+            android:onClick="uploadbut"
+            android:drawableLeft="@drawable/uploadicon"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/but6"
+            android:onClick="onlinebut"
+            android:text="online sites"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/but7"
+            android:text="Social Media"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navviewid"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/nav_header">
+
+
+    </android.support.design.widget.NavigationView>
+
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>

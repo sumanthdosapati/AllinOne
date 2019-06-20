@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior = "single" >
+
+        <item
+            android:id = "@+id/first"
+            android:icon = "@drawable/callicon"
+            android:title = "Call" />
+        <item
+            android:id = "@+id/second"
+            android:icon = "@drawable/smsicon"
+            android:title = "SMS" />
+        <item
+            android:id = "@+id/third"
+            android:icon = "@drawable/mailicon"
+            android:title = "Mail" />
+        <item
+            android:id = "@+id/fourth"
+            android:icon = "@drawable/camicon"
+            android:title = "Camera" />
+        <item
+            android:id = "@+id/fifth"
+            android:icon = "@drawable/uploadicon"
+            android:title = "Upload" />
+    </group>
+
+    <item
+        android:id = "@+id/smedia"
+        android:title = "Social Media" />
+    <item
+        android:id = "@+id/sitesmenu"
+        android:title = "Online sites" />
+    <item
+        android:id="@+id/report"
+        android:title="Report a Problem"/>
+
+
+</menu>
+

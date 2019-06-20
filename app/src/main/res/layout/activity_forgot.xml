@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHANGE YOUR PASSWORD"
+        android:textColor="#000"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:shadowColor="#000"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/heading"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Enter phone number"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:id="@+id/phn"
+        android:inputType="phone"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phn"
+        android:text="Enter OTP"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:id="@+id/otpview"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/otpview"
+        android:layout_below="@+id/phn"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="60dp"
+        android:inputType="number"
+        android:maxLength="6"
+        android:id="@+id/editotp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otpview"
+        android:text="New Password"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:id="@+id/newpw"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/newpw"
+        android:layout_below="@+id/editotp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/newpwedit"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newpw"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="CONFIRM"
+        android:textColor="#000"
+        android:clickable="true"
+        android:onClick="cnfbutton"/>
+</RelativeLayout>
